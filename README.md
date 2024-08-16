@@ -1,4 +1,4 @@
-# 7dliving
+# 7Dliving
 # FastAPI CRUD User Service
 
 ## Overview
