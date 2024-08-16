@@ -16,7 +16,7 @@ This project is a backend service built with FastAPI to handle CRUD (Create, Rea
 
 ## Prerequisites
 
-- **Python 3.7+** must be installed on your system.
+- Python VsCode must be installed on your system.
 - **pip** (Python package installer) should be available.
 
 ## Create a virtual environment:
