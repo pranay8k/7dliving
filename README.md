@@ -18,6 +18,8 @@ This project is a backend service built with FastAPI to handle CRUD (Create, Rea
 
 - Python VsCode must be installed on your system.
 - **pip** (Python package installer) should be available.
+- pip install fastapi uvicorn
+
 
 ## Create a virtual environment:
 python -m venv venv
@@ -27,13 +29,10 @@ uvicorn main:app --reload
 
 ## API Endpoints
 1. Add a New User
-Method: POST
-Endpoint: /users
-Request Body:
-
+Request:
 {
-    "name": "John Doe",
-    "email": "john@gmail,com.com",
+    "name": "pranay k",
+    "email": "pranay@gmail,com.com",
     "age": 30
 }
 Response:
@@ -41,46 +40,44 @@ Response:
 {
     "user_id": "123254",
     "user": {
-        "name": "John Doe",
-        "email": "john@gmail.com",
+        "name": "pranay k",
+        "email": "pranay@gmail.com",
         "age": 30
     }
 }
 
-Retrieve Users with Pagination
-Method: GET
-Endpoint: /users
-Query Parameters:
+## Retrieve Users with Pagination
+GET
 page: Page number (default: 1)
 limit: Number of users per page (default: 10)
 Response:
 
     {
-        "name": "John Doe",
-        "email": "john@gmail.com.com",
+        "name": "pranay k",
+        "email": "pranay@gmail.com.com",
         "age": 30
     },
     {
-        "name": "Jane Doe",
-        "email": "jane@gmail.com.com",
+        "name": "Arush ",
+        "email": "arush@gmail.com.com",
         "age": 25
     }
 
-Search for Users
+## Search for Users
 
     {
-        "name": "John Doe",
-        "email": "john@gmail.com.com",
+        "name": "pranay k",
+        "email": "pranay@gmail.com.com",
         "age": 30
     }
     
-Update User Details
+## Update User Details
 {
-    "name": "John Smith",
-    "email": "john.smith@gmail.com",
+    "name": "pranay kurangi",
+    "email": "pranay.kurangi@gmail.com",
     "age": 31
 }
-Delete a User
+## Delete a User
 user_id: ID of the user to delete (required)
 {
     "detail": "User deleted"
